@@ -116,8 +116,8 @@
           split: '=',
           index: 1,
           iframe: 1,
-          url: "http://www.youtube.com/v/%id%&amp;autoplay=1&amp;fs=1&amp;rel=0",
-          url: "http://www.youtube.com/embed/%id%?autoplay=1&amp;fs=1&amp;rel=0"
+          url: "https://www.youtube.com/v/%id%&amp;autoplay=1&amp;fs=1&amp;rel=0",
+          url: "https://www.youtube.com/embed/%id%?autoplay=1&amp;fs=1&amp;rel=0"
         },
         metacafe: {
           reg: /metacafe\.com\/watch/i,
@@ -1079,4 +1079,5 @@
     }
   });
   
-})(jQuery);
+})(jQuery);
+
