@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-US" itemscope itemtype="http://schema.org/Organization" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<title>The Christmas Tree - an advent treasure hunt from Stewardship</title>
+
+
+<!-- FORCE IE EDGE RENDERING -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!--SET SOCIAL META -->
+<meta property="fb:admins" content="443204392396953"/>
+<meta property="og:site_name" content="Hội Phát Cuồng Vì Game"/>
+<!--google+ -->
+<meta itemprop="name" content="The Christmas Tree">
+<meta itemprop="description" content="Chúc mừng giáng sinh đến các bạn thân yêu">
+<!--facebook -->
+<meta property="og:title" content="The Christmas Tree"/>
+<meta property="og:type" content="company"/>
+<meta property="og:url" content="http://tienvu.net/christmastree"/>
+<meta property="og:image" content="fb.png"/>
+<meta property="og:description" content="Chúc mừng giáng sinh đến các bạn thân yêu"/>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/stewardship/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+
+<!-- PLUGINS / MODERNIZR 
+<script src="https://raw.github.com/Modernizr/Modernizr/master/modernizr.js"></script>
+<script>window.Modernizr || document.write('<script src="wp-content/themes/stewardship/js/modernizr.js"><\/script>')</script>-->
+<script src="wp-content/themes/stewardship/js/modernizr.js"></script>
+
+
+
+</head>
+
+<body class="home blog">
+<div id="main">
+
+    <div id="main_background"></div>
+    
+    <div id="main_header"></div>
+    
+    <div id="main_sign">
+        <div id="sign_candy">
+        	<div id="sign_candy_inner">
+                <div id="sign_candy_title"><img src="wp-content/themes/stewardship/images/sign_candy_title.png" border="0" alt="The Christmas Tree Treasure Hunt" /></div>
+                <div id="sign_candy_info" class="cider">
+                    <p>Mới đó mà tới noel nữa rầu! Tui làm một cây thông noel cho hội của chúng ta... </p>
+                    <p>kà kà kà!</p>
+                </div>
+            </div>
+        </div>
+        <div id="sign_wood" class="cider"><span>Start here!</span></div>
+
+    </div>
+    
+    <div id="view_enter">
+        <div id="enter_ct"></div>
+        <div id="enter_sf"><div id="enter_sf_inner"></div></div>
+    </div>
+    
+    <div id="view_content">
+    	<div id="content_string"></div>
+        
+	<div id="content_star"></div>
+        
+	        <div id="canvas"><canvas id="sparkles" width="1000" height="1780"></canvas></div>
+		
+        
+        <div id="content_ct">
+        	<ul id="ct_lights">
+            	            	<li id="light1" class="light rotate rotate-30 odd"></li>
+                            	<li id="light2" class="light rotate rotate-5 even"></li>
+                            	<li id="light3" class="light rotate rotate30 odd"></li>
+                            	<li id="light4" class="light rotate rotate5 even"></li>
+                            	<li id="light5" class="light rotate rotate-10 odd"></li>
+                            	<li id="light6" class="light rotate rotate-5 even"></li>
+                            	<li id="light7" class="light rotate  odd"></li>
+                            	<li id="light8" class="light rotate rotate25 even"></li>
+                            	<li id="light9" class="light rotate rotate5 odd"></li>
+                            	<li id="light10" class="light rotate rotate10 even"></li>
+                            	<li id="light11" class="light rotate rotate15 odd"></li>
+                            	<li id="light12" class="light rotate rotate-20 even"></li>
+                            	<li id="light13" class="light rotate rotate-25 odd"></li>
+                            	<li id="light14" class="light rotate rotate-10 even"></li>
+                            	<li id="light15" class="light rotate rotate5 odd"></li>
+                            	<li id="light16" class="light rotate rotate5 even"></li>
+                            	<li id="light17" class="light rotate rotate10 odd"></li>
+                            	<li id="light18" class="light rotate rotate5 even"></li>
+                            	<li id="light19" class="light rotate rotate5 odd"></li>
+                            	<li id="light20" class="light rotate rotate-5 even"></li>
+                            	<li id="light21" class="light rotate rotate-10 odd"></li>
+                            	<li id="light22" class="light rotate rotate-15 even"></li>
+                            	<li id="light23" class="light rotate rotate-15 odd"></li>
+                            	<li id="light24" class="light rotate rotate-10 even"></li>
+                            	<li id="light25" class="light rotate  odd"></li>
+                            	<li id="light26" class="light rotate rotate10 even"></li>
+                            	<li id="light27" class="light rotate rotate5 odd"></li>
+                            </ul>
+        </div>
+        
+        <div id="content_sf_left"><div id="content_sf_left_inner"></div></div>
+        <div id="content_sf_right"><div id="content_sf_right_inner"></div></div>
+    </div>
+    
+    <div id="overlay_decorations">
+       <div class="content-star note-link" rel="intro"><a href="#"></a></div>
+    	<ul id="content_decorations">
+                                                
+                    <li id="baubel1" rel="video_wrap-a-cat" data-length="default" class="baubel baubel2 video-link"></li>
+                                    
+                    <li id="baubel2" rel="story_hannah" data-length="long" class="baubel baubel1 story-link"></li>
+                                    
+                    <li id="baubel3" rel="story_jessie" data-length="long" class="baubel baubel4 story-link"></li>
+                                    
+                    <li id="baubel4" rel="video_john-lewis-christmas-advert-2012" data-length="default" class="baubel baubel3 video-link"></li>
+                                    
+                    <li id="baubel5" rel="video_12-days-of-christmas" data-length="default" class="baubel baubel4 video-link"></li>
+                                    
+                    <li id="baubel6" rel="story_cheryl" data-length="default" class="baubel baubel3 story-link"></li>
+                                    
+                    <li id="baubel7" rel="story_kirstie" data-length="xtralong" class="baubel baubel2 story-link"></li>
+                                    
+                    <li id="baubel8" rel="story_christine" data-length="default" class="baubel baubel4 story-link"></li>
+                                    
+                    <li id="baubel9" rel="story_laraine" data-length="default" class="baubel baubel1 story-link"></li>
+                                    
+                    <li id="baubel10" rel="story_lou" data-length="long" class="baubel baubel3 story-link"></li>
+                                    
+                    <li id="baubel11" rel="video_mr-bean" data-length="default" class="baubel baubel1 video-link"></li>
+                                    
+                    <li id="baubel12" rel="story_sarah" data-length="default" class="baubel baubel3 story-link"></li>
+                                    
+                    <li id="baubel13" rel="video_charity-water" data-length="default" class="baubel baubel4 video-link"></li>
+                                    
+                    <li id="baubel14" rel="video_stewardship-life-is-a-gift" data-length="default" class="baubel baubel2 video-link"></li>
+                            
+                        <li id="gbm1" class="gbm rotate rotate-20"></li>
+                        <li id="gbm2" class="gbm rotate rotate30"></li>
+                        <li id="gbm3" class="gbm rotate rotate-30"></li>
+                        
+                        <li id="candycane1" class="candycane odd"></li>
+                        <li id="candycane2" class="candycane even"></li>
+                        <li id="candycane3" class="candycane odd"></li>
+                        <li id="candycane4" class="candycane even"></li>
+                        <li id="candycane5" class="candycane odd"></li>
+                        <li id="candycane6" class="candycane even"></li>
+                        
+                        <li id="nut1" class="nut rotate rotate-20"></li>
+                        <li id="nut2" class="nut rotate rotate-30"></li>
+                        <li id="nut3" class="nut rotate rotate15"></li>
+                        <li id="nut4" class="nut rotate rotate5"></li>
+                        <li id="nut5" class="nut rotate rotate-10"></li>
+                        <li id="nut6" class="nut rotate rotate-25"></li>
+                        <li id="nut7" class="nut rotate "></li>
+                        <li id="nut8" class="nut rotate rotate25"></li>
+                        
+                        <li id="bell1" class="bell rotate rotate25"></li>
+                        <li id="bell2" class="bell rotate rotate-30"></li>
+                        <li id="bell3" class="bell rotate rotate30"></li>
+                        <li id="bell4" class="bell rotate rotate-30"></li>
+                        <li id="bell5" class="bell rotate rotate20"></li>
+                        <li id="bell6" class="bell rotate rotate-30"></li>
+                        
+                        <li id="stocking1" class="stocking"><span></span></li>
+                        <li id="stocking2" class="stocking"><span></span></li>
+                        <li id="stocking3" class="stocking"><span></span></li>
+                        <li id="stocking4" class="stocking"><span></span></li>
+                    </ul>
+        <div id="content_stocking">
+        	<div id="stocking_ribbon"></div>
+            <div id="stocking_input">
+            	<input placeholder="Add your name here..." />
+            	<div id="stocking_resizer" class="hide"></div>
+            </div>
+            <div id="stocking_btns">
+            	<span id="stocking_yes"></span>
+                <span id="stocking_no"></span>
+            </div>    
+        </div>
+    </div>
+    
+    <div id="main_controls">
+    	<div id="control_lights">
+        	<div id="lightometer">
+            	<ul id="lightometer_options">
+                	<li id="option_wow">Wow!</li>
+                    <li id="option_super">Super</li>
+                    <li id="option_flash">Flash</li>
+                    <li id="option_off">Off</li>
+                </ul>
+            	<div id="lightometer_bar"><span id="lights_seq">Off</span></div>
+            </div>
+        </div>
+        <div id="control_snow"></div>
+    </div>
+    
+    <div id="main_footer">
+    	<div id="floor">
+        	<div id="legal">
+            	Stewardship is the operating name of Stewardship Services (UKET) Limited. Established in 1906.<br />
+                Registered charity no. 234714, and a company limited by guarantee, registered in England no. 90305.<br />
+                Registered office: Oakwood House, Oakwood Hill Industrial Estate, Loughton, Essex IG10 3TZ
+            </div>
+        </div>
+    </div>
+    
+    <div id="gifts">
+        <div id="gifts_inner">
+        <div id="robin"></div>
+
+        <a href="http://www.itvu.tv/" target="_blank" title="Receive" id="gift_receive" class="cider">VũLiềuMạng<br/>2012</a>
+        </div>
+        <div id="shadow"></div>
+    </div>
+    
+    <div id="main_overlay" class="hide"></div>
+    
+    <div id="main_warning">
+    	<div id="main_warning_inner">
+        	<div id="warning_text" class="cider">
+                <h3>You've blown a fuse!</h3>
+                <p>Pull the lever and turn the lights back on</p>
+            </div>
+            <div id="warning_switch">
+            	<span id="lever"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main_box" class="hide">
+    	<div id="main_box_inner">
+        	<span id="main_box_close"></span>
+            <div id="main_box_note" class="hide content">
+				                    <div id="intro" class="note hide">
+                        <div class="note_content">
+                            <p><strong>The Christmas Tree is an advent gift from Stewardship to you!</strong></p>
+<p>Inspired by the tale of <a title="Read: Two Trees" href="/jessie">two trees</a>; surprise gifts for two unsuspecting families, we offer simple tales of miracles, hope and generosity.  We hope to inspire you.  To remind you of the wonder of Christmas; a celebration of generosity, of God’s greatest gift to all mankind.</p>
+<p>Take a moment to explore our Christmas tree.  Play. Sing along. Giggle. Be inspired. Share.</p>
+<p>Wishing you a blessed Christmas,</p>
+<h3>Stewardship.</h3>
+                        </div>
+                    </div>
+                            </div>
+			<div id="main_box_story" class="hide content">
+            						<div id="story_christine" class="story hide christine">
+                        <div class="story_thumb"><img width="640" height="340" src="wp-content/uploads/2010/07/story1.jpg" class="attachment-full wp-post-image" alt="story1" title="story1" /></div>
+                        <div class="story_content">
+                            <p>My friend is a single mum with 3 children aged 7, 8 and 9. Coming up to Christmas she spent all she had on presents, food and decorations to make Christmas enjoyable for her kids. I asked her what she wanted for Christmas and looking at me blankly she said, &#8220;no one has ever asked me that before, who is there to buy presents for me?&#8221;</p>
+<p>Buying 3 presents I knew she would like, I arranged for her kids to be at my house. Each one chose a present and we wrapped them together, writing &#8216;To Mum&#8217; on each tag. The presents remained a secret until Christmas Eve when the kids took the presents home, overwhelmed with excitement they handed them over straight away. On Christmas Eve my friend rang me in tears to say thank you.</p>
+<h3>Christine x</h3>
+                        </div>
+                    </div>
+									<div id="story_cheryl" class="story hide cheryl">
+                        <div class="story_thumb"><img width="640" height="336" src="wp-content/uploads/2011/11/goats.jpg" class="attachment-full wp-post-image" alt="goats" title="goats" /></div>
+                        <div class="story_content">
+                            <p>Each year, I ask my family for my presents to be turned into gifts for the poorest of the poor in Burundi.  A goat costs just £20 and provides milk, manure and meat for children in Pygmy families.  For £60, a gift can help buy a bicycle for a community worker.  And for a stonking £500, a gift can buy a cow (or for less money, can part of one!), which provides milk for people and empowers them to move out of poverty.  Smaller gifts of any amount can be used to contribute to the orphans’ Christmas party.</p>
+<p>I love knowing that gifts I don’t really need are being transferred into life-savers the other side of the world.</p>
+<h3>Simon</h3>
+<p><a href="https://my.give.net/BurundiChristmas2012">https://my.give.net/BurundiChristmas2012</a></p>
+                        </div>
+                    </div>
+									<div id="story_sarah" class="story hide sarah">
+                        <div class="story_thumb"><img width="640" height="342" src="wp-content/uploads/2011/11/aliedwards1.jpg" class="attachment-full wp-post-image" alt="aliedwards" title="aliedwards" /></div>
+                        <div class="story_content">
+                            <p>It’s been a tradition among a group of friends at church to go carol singing close to Christmas.  We usually head down to a wealthy estate, dressed in lots of layers; holding our carol sheets and lanterns in our frozen hands! We sing for a couple of hours while two of our team door-knock.  And when we get offered money (they usually think that’s why we’ve chosen their wealthy estate!) we thank them and tell them that we’re from the local church but we’re not collecting money.  Then we give them individually wrapped parcels of Celebration chocolates and wish them a wonderful Christmas. I remember one family being so touched one year that they left their door wide open, even though it was snowing, and listened to us for a good few songs, whilst the heat from their warm house escaped!</p>
+<h3>Sarah</h3>
+                        </div>
+                    </div>
+									<div id="story_kirstie" class="story hide kirstie">
+                        <div class="story_thumb"><img width="640" height="343" src="wp-content/uploads/2011/11/inoc.jpg" class="attachment-full wp-post-image" alt="inoc" title="inoc" /></div>
+                        <div class="story_content">
+                            <p>In my teens and twenties I worked in a record shop – yes I was that cool! My Mum was always concerned about one of my fellow co-workers who she thought looked too thin. Just before Christmas one year we caught him in the supermarket looking wistfully at some food, checking his wallet, and walking away. With a bit of casual chit chat back in the shop it turned out he was living on his own and was clearly struggling. As soon as I relayed the information to Mum she went and purchased an array of nice Christmas treats, including what he had been eyeing up.  I gave it to him on the quiet and, after his initial protests, he accepted. It didn’t stop there; each week when Mum went shopping she’d buy some extra tins which I’d pass on. Amazingly, I bumped into him at an event last year.  He came up and hugged me but I didn’t recognise him; he’s a healthy weight now.  The first thing he asked me was how my Mum was, whilst introducing me to his adorable family, telling them all about Mum and her kindness, and insisting on buying me a cuppa.  I like a happy ending.</p>
+<h3>Kirstie</h3>
+                        </div>
+                    </div>
+									<div id="story_lou" class="story hide lou">
+                        <div class="story_thumb"><img width="640" height="344" src="wp-content/uploads/2011/11/jenniferdonley.jpg" class="attachment-full wp-post-image" alt="jenniferdonley" title="jenniferdonley" /></div>
+                        <div class="story_content">
+                            <p>Last December I moved into my very first apartment. I was grateful for my own space, but the 1970’s décor meant it was going to need a lot of work and love to get it to feel like home in time for Christmas. I took a few days off work to try and get it all done. One lunch-time I was covered in paint and sweat, frantically decorating, and drinking tea out of a polystyrene cup. I heard a knock at the door – my first visitors! – and opened it to find my colleagues in the hallway with several pizzas and a big bottle of Pepsi.  After lunch, my manager grabbed a roller and started painting a wall in the bedroom. Another one of my colleagues started scraping wallpaper. I was so grateful for the food, and even more grateful for the help! On Christmas Eve, I sat down by my beautiful Christmas tree to wrap some last-minute presents, with not a single paint can or cardboard box in sight. My apartment felt like home, and it was all because of the generosity and love that my colleagues, friends and neighbours had shown throughout Advent.</p>
+<h3>Lou</h3>
+                        </div>
+                    </div>
+									<div id="story_hannah" class="story hide hannah">
+                        <div class="story_thumb"><img width="640" height="336" src="wp-content/uploads/2011/11/Piotr-Lipson1.jpg" class="attachment-full wp-post-image" alt="Piotr Lipson" title="Piotr Lipson" /></div>
+                        <div class="story_content">
+                            <p>Christmas was my Dad’s favourite time of the year and on the 12<sup>th</sup> of August this year we celebrated our last Christmas together. Dad was in the North London Hospice when my Mum, brother, sister and I decided to plan one last Christmas together.  With 24hours to pull it off, we all mucked in with creating decorations and planning the best possible Christmas for Dad. When Dad woke up from his Sunday nap, his bedroom had been decorated with paper chain garlands, snowflakes, fairy lights, candy canes and a Christmas tree! Best of all was the Christmas dinner that was prepared for us by the staff. We had turkey, roast potatoes, honey roasted parsnips, stuffing, pigs in blankets, cabbage and gravy, thanks to hospice chef Ben Watt. The staff at the North London Hospice worked so hard to make our day special and they proved that the spirit of generosity that we often see at Christmas can be used at any time of year.</p>
+<h3>Hannah</h3>
+                        </div>
+                    </div>
+									<div id="story_jessie" class="story hide jessie">
+                        <div class="story_thumb"><img width="640" height="340" src="wp-content/uploads/2011/11/story7.jpg" class="attachment-full wp-post-image" alt="story7" title="story7" /></div>
+                        <div class="story_content">
+                            <p>After a long, financially difficult year, I realised I couldn’t afford a Christmas tree. I knew my boys wanted one, but they were old enough to understand why we couldn’t have one. To me the Christmas message was miraculous and wonderful (even without all the trimmings), but after seeing Christmas trees through neighbour’s windows it was hard not to wish we had one.  One night I came home from work to find two trees on my doorstep. One was from my younger sister, the other from a teenage friend of my son, who had even bought baubles and tinsel for us to decorate it with! I couldn’t pay for them or return the favour, but I decided to try and find someone else who was struggling to buy a tree.</p>
+<p>At work the next day, a colleague told me her parents were also planning a stripped-back Christmas due to financial difficulties. I explained I had two trees and suggested she take one and surprise them with it. And so that evening, she did. That Christmas was special, and not just because we had an unexpected tree. I often wonder if the people who gave me the two trees knew how far their generosity would go. The thread of kindness that connected four families reminded me of the supernatural generosity at the heart of Christmas.</p>
+<h3>Jessie</h3>
+                        </div>
+                    </div>
+									<div id="story_laraine" class="story hide laraine">
+                        <div class="story_thumb"><img width="640" height="356" src="wp-content/uploads/2011/12/salvation-army.jpg" class="attachment-full wp-post-image" alt="salvation army" title="salvation army" /></div>
+                        <div class="story_content">
+                            <p>Back in the early 1900s my Nanny Amy, along with thousands of others in London, was really struggling to stay afloat financially.  With four young children to look after, things were looking bleak.</p>
+<p>One Christmas the Salvation Army came to the rescue and gave Nanny Amy and her family 5 shillings (25p in today’s money!)  That kind gift bought the whole family fish and chips and saved them from a very hungry Christmas.</p>
+<p>The story still lives on and Nanny Amy never forgot that act of kindness in all her 89 years!</p>
+<h3>Laraine</h3>
+                        </div>
+                    </div>
+				            </div>
+            
+	               <div id="main_box_video" class="hide content">
+            	                        <div id="video_john-lewis-christmas-advert-2012" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/0N8axp9nHNU" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                                        <div id="video_charity-water" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/KzP0v8cYIyk" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                                        <div id="video_mr-bean" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/Xzkm-kbx2T4" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                                        <div id="video_stewardship-life-is-a-gift" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/WKSsZaDUcW4" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                                        <div id="video_wrap-a-cat" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/jm3dm5J5r0A" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                                        <div id="video_12-days-of-christmas" class="hide video video_player">
+                                                	<iframe width="640" height="360" src="http://www.youtube.com/embed/2Fe11OlMiz8" frameborder="0" allowfullscreen></iframe>
+                                                            </div>
+                            </div>
+            
+            <div id="main_box_share">
+            	<div id="share_note_intro" class="hide share">
+                	<span class="social share_fb"><iframe src="http://facebook.com/plugins/like.php?href=http://tienvu.net&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                   </div>
+            	            	<div id="share_story_christine" class="hide share">
+        
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://tienvu.net&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	
+                </div>
+                            	<div id="share_story_cheryl" class="hide share">
+                	
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/cheryl/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+    
+                </div>
+                            	<div id="share_story_sarah" class="hide share">
+                
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/sarah/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+
+                </div>
+                            	<div id="share_story_kirstie" class="hide share">
+        
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/kirstie/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+
+                </div>
+                            	<div id="share_story_lou" class="hide share">
+
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/lou/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+ 
+                </div>
+                            	<div id="share_story_hannah" class="hide share">
+                
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/hannah/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+              
+                </div>
+                            	<div id="share_story_jessie" class="hide share">
+        
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/jessie/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+
+                </div>
+                            	<div id="share_story_laraine" class="hide share">
+
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=/laraine/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+               
+                </div>
+                                                <div id="share_video_john-lewis-christmas-advert-2012" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.youtube.com/v/0N8axp9nHNU" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.youtube.com/v/0N8axp9nHNU&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://www.youtube.com/v/0N8axp9nHNU"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://www.youtube.com/v/0N8axp9nHNU.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                                <div id="share_video_charity-water" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.youtube.com/v/KzP0v8cYIyk" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.youtube.com/v/KzP0v8cYIyk&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://www.youtube.com/v/KzP0v8cYIyk"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://www.youtube.com/v/KzP0v8cYIyk.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                                <div id="share_video_mr-bean" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.youtube.com/v/Xzkm-kbx2T4" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.youtube.com/v/Xzkm-kbx2T4&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://www.youtube.com/v/Xzkm-kbx2T4"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://www.youtube.com/v/Xzkm-kbx2T4.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                                <div id="share_video_stewardship-life-is-a-gift" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.youtube.com/v/WKSsZaDUcW4" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.youtube.com/v/WKSsZaDUcW4&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://www.youtube.com/v/WKSsZaDUcW4"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://www.youtube.com/v/WKSsZaDUcW4.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                                <div id="share_video_wrap-a-cat" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://youtu.be/jm3dm5J5r0A" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://youtu.be/jm3dm5J5r0A&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://youtu.be/jm3dm5J5r0A"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://youtu.be/jm3dm5J5r0A.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                                <div id="share_video_12-days-of-christmas" class="hide share">
+                    <span class="social share_tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.youtube.com/v/2Fe11OlMiz8" data-text="Great video via @stewardshipnews:" data-count="none" data-related="stewardshipnews">Tweet</a></span>
+                	<span class="social share_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.youtube.com/v/2Fe11OlMiz8&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=297083710307567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></span>
+                	<span class="social share_gp"><g:plusone size="large" annotation="none" href="http://www.youtube.com/v/2Fe11OlMiz8"></g:plusone></span>
+                	<span class="social share_email"><a href="mailto:Type%20email%20address%20here?subject=The%20Christmas%20Tree%20Treasure%20Hunt%20from%20Stewardship&body=Hi%20I%20found%20this%20great%20video%20on%20http://www.youtube.com/v/2Fe11OlMiz8.%20Check%20it%20out!" title="Email to a friend/colleague" target="_blank"></a></span>
+                </div>
+                            </div>
+        </div>
+    </div>
+    
+    <div id="main_audio">
+	        <audio id="boom" preload="auto" src="wp-content/uploads/2011/12/boom1.wav"></audio>
+        <audio id="wee" preload="auto" src="wp-content/themes/stewardship/js/sounds/wee.wav"></audio>
+        <audio id="bell" preload="auto" src="wp-content/themes/stewardship/js/sounds/bell.wav"></audio>
+        <audio id="candy1" preload="auto" src="wp-content/themes/stewardship/js/sounds/candy1.wav"></audio>
+        <audio id="candy2" preload="auto" src="wp-content/themes/stewardship/js/sounds/candy2.wav"></audio>
+        <audio id="candy3" preload="auto" src="wp-content/themes/stewardship/js/sounds/candy3.wav"></audio>
+    </div>
+    
+</div>
+
+
+<!-- ADD jQUERY -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="wp-content/themes/stewardship/js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+
+<!-- PLUGINS / SNOWFALL -->
+<script type="text/javascript" src="wp-content/themes/stewardship/js/snowfall.jquery.js"></script>
+<!-- PLUGINS / ROTATE -->
+<script type="text/javascript" src="wp-content/themes/stewardship/js/jquery.rotate.js"></script>
+
+<!-- PLUGINS / EaselJS Framework -->
+<script src="wp-content/themes/stewardship/js/easeljs/utils/UID.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/geom/Matrix2D.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/geom/Rectangle.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/events/MouseEvent.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/SpriteSheet.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Shadow.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/DisplayObject.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Container.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Stage.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Bitmap.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/BitmapSequence.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Shape.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/display/Text.js"></script>
+<script src="wp-content/themes/stewardship/js/easeljs/utils/Ticker.js"></script>
+<!-- End EaselJS Imports -->
+
+<!-- PLUGINS / SOCIAL -->
+<script type="text/javascript" src="/platform.twitter.com/widgets.js"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- MAIN JS THEME FUNCTIONS -->
+<script type='text/javascript' src='wp-content/themes/stewardship/js/jReady.js'>var path = "/wp-content/themes/stewardship/js/";</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+   var pageTracker = _gat._getTracker("UA-2692594-16");
+   pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

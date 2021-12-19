@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>TienVu Studio · Web services · Freelance VietNam</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/estilos_new.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    /* #logo {
+        position: absolute;
+        display: block;
+        width: 269px;
+        left: 50%;
+        opacity: 0;
+        margin-left: -124px;
+        top: 50%;
+        margin-top: -174px;
+        height: 302px;
+        z-index: 9;
+        background-image: url(imgs/logoanim_day.png);
+    }
+    
+    .logofr1 {
+        background-position: top left;
+    }
+    
+    .logofr2 {
+        background-position: top center;
+    }
+    
+    .logofr3 {
+        background-position: top right;
+    }
+    
+    .botwork {
+        background-image: url(imgs/BOT_work_day.png);
+    }
+    
+    .botwork:hover {
+        background-position: center top;
+    }
+    
+    .botabout {
+        background-image: url(imgs/BOT_about_day.png);
+        border-right: 1px solid #606060;
+    }
+    
+    .botabout:hover {
+        background-position: center top;
+    }
+    
+    .botblog {
+        background-image: url(imgs/BOT_blog_day.png);
+        border-left: 1px solid #606060;
+    }
+    
+    .botblog:hover {
+        background-position: center top;
+    }
+    
+    .botabout_sel {
+        background-image: url(imgs/BOT_about_day.png);
+        background-position: center top;
+        border-right: 1px solid #606060;
+    }
+    
+    .botwork_sel {
+        background-image: url(imgs/BOT_work_day.png);
+        background-position: center top;
+    }
+    
+    .botblog_sel {
+        background-image: url(imgs/BOT_blog_day.png);
+        background-position: center top;
+        border-left: 1px solid #606060;
+    }
+    
+    .muteoff {
+        background-image: url(imgs/social/white/mute.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    
+    .muteon {
+        background-image: url(imgs/social/white/mute.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    
+    .step {
+        display: block;
+        cursor: pointer;
+        width: 21px;
+        height: 21px;
+        float: left;
+        background-image: url(imgs/stepb.png);
+        margin-right: 10px;
+    } */
+
+    #logo { position:absolute; display:block;  width:269px;
+			left:50%; opacity:0.0; margin-left:-124px; top:50%; margin-top:-174px; height:302px; z-index:9; background-image:url(imgs/logoanim_day.png); }
+			
+			.logofr1 { background-position:top left; }
+			.logofr2 { background-position:top center; }
+			.logofr3 { background-position:top right; }
+			
+			.botwork { background-image:url(imgs/BOT_work_day.png);  }
+			.botwork:hover { background-position:center top; }
+			.botabout { background-image:url(imgs/BOT_about_day.png); border-right:1px solid #606060; }
+			.botabout:hover { background-position:center top; }
+			.botblog { background-image:url(imgs/BOT_blog_day.png); border-left:1px solid #606060; }
+			.botblog:hover { background-position:center top; }
+			
+			.botabout_sel { background-image:url(imgs/BOT_about_day.png); background-position:center top;  border-right:1px solid #606060; }
+			.botwork_sel { background-image:url(imgs/BOT_work_day.png); background-position:center top;  }
+			.botblog_sel { background-image:url(imgs/BOT_blog_day.png); background-position:center top; border-left:1px solid #606060; }
+			
+			.muteoff { background-image:url(imgs/social/black/mute.png); background-repeat:no-repeat; background-position:top right; }
+			.muteon { background-image:url(imgs/social/black/mute.png); background-repeat:no-repeat; background-position:bottom right; }
+			
+			.step { display:block; cursor:pointer; width:21px; height:21px; float:left; background-image:url(imgs/stepb.png); margin-right:10px;  }
+			
+			#awwwards{
+			position:fixed;
+			top:50%;
+			right:0px; height:105px; 	width:69px;
+			margin-top:-70px;
+			z-index:99999;
+			}
+			#awwwards a{
+			width:69px;
+			height:105px;
+			text-indent:-8000px;
+			display:block;
+			background:url(imgs/awwwards_day.png) no-repeat;
+			overflow:hidden;
+			}
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/ImprovedNoise.js"></script>
+    <script type="text/javascript" src="js/Tween.js"></script>
+    <script type="text/javascript" src="js/ThreeWebGL.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+    <script type="text/javascript" src="js/ThreeExtras.js"></script>
+    <script type="text/javascript" src="obj/Bird.js"></script>
+    <script type="text/javascript" src="js/RequestAnimationFrame.js"></script>
+    <!-- <script type="text/javascript" src="/js/Stats.js"></script> -->
+    <script id="vs" type="x-shader/x-vertex">
+        varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }
+    </script>
+    <script id="fs" type="x-shader/x-fragment">
+        uniform sampler2D map; uniform vec3 fogColor; uniform float fogNear; uniform float fogFar; varying vec2 vUv; void main() { float depth = gl_FragCoord.z / gl_FragCoord.w; float fogFactor = smoothstep( fogNear, fogFar, depth ); gl_FragColor = texture2D( map, vUv ); gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 ); gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor ); }
+    </script>
+    <script type="text/javascript">
+    var postget = '';
+    var isstorm = 0;
+    var issnow = 0;
+    var phpmoz = 0;
+    var phpmoz = 1;
+    var phpbirds = 4;
+    var phpmoment = 'day';
+    var phpstorm = 0;
+    var phpsnow = 0;
+    var noaudio = 1;
+    noaudio = 0;
+
+    var texture = THREE.ImageUtils.loadTexture('imgs/cloud_' + phpmoment + '.png');
+    texturestorm = THREE.ImageUtils.loadTexture('imgs/cloud_storm.png');
+
+    var fog_night = new THREE.Fog(0x041121, -100, 3000);
+    var fog_day = new THREE.Fog(0xd2f8ff, -100, 3000);
+    var fog_rainy = new THREE.Fog(0x94999d, -100, 3000);
+    var fog_rainynight = new THREE.Fog(0x060606, -100, 3000);
+
+    var phpfog = {
+        "map": {
+            type: "t",
+            value: 2,
+            texture: texture
+        },
+        "fogColor": {
+            type: "c",
+            value: fog_day.color
+        },
+        "fogNear": {
+            type: "f",
+            value: fog_day.near
+        },
+        "fogFar": {
+            type: "f",
+            value: fog_day.far
+        },
+    };
+
+    var phpfogs = {
+        "map": {
+            type: "t",
+            value: 2,
+            texture: texturestorm
+        },
+        "fogColor": {
+            type: "c",
+            value: fog_day.color
+        },
+        "fogNear": {
+            type: "f",
+            value: fog_day.near
+        },
+        "fogFar": {
+            type: "f",
+            value: fog_day.far
+        },
+    };
+
+    var texturestorm;
+    </script>
+    <script type="text/javascript">
+    var __wm = (function() {
+        var wbPrefix = "/web/";
+        var wbCurrentUrl = "http://tienvu.net/";
+
+        var firstYear = 1996;
+        var imgWidth = 475,
+            imgHeight = 27;
+        var yearImgWidth = 25,
+            monthImgWidth = 2;
+        var displayDay = "24";
+        var displayMonth = "thg 6";
+        var displayYear = "2012";
+        var prettyMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var $D = document,
+            $ = function(n) {
+                return document.getElementById(n)
+            };
+        var trackerVal, curYear = -1,
+            curMonth = -1;
+        var yearTracker, monthTracker;
+
+        function showTrackers(val) {
+            if (val === trackerVal) return;
+            var $ipp = $("wm-ipp");
+            var $y = $("displayYearEl"),
+                $m = $("displayMonthEl"),
+                $d = $("displayDayEl");
+            if (val) {
+                $ipp.className = "hi";
+            } else {
+                $ipp.className = "";
+                $y.innerHTML = displayYear;
+                $m.innerHTML = displayMonth;
+                $d.innerHTML = displayDay;
+            }
+            yearTracker.style.display = val ? "inline" : "none";
+            monthTracker.style.display = val ? "inline" : "none";
+            trackerVal = val;
+        }
+
+        function getElementX2(obj) {
+            var $e = jQuery(obj);
+            return (typeof $e == "undefined" || typeof $e.offset == "undefined") ?
+                getElementX(obj) : Math.round($e.offset().left);
+        }
+
+        function trackMouseMove(event, element) {
+            var eventX = getEventX(event);
+            var elementX = getElementX2(element);
+            var xOff = Math.min(Math.max(0, eventX - elementX), imgWidth);
+            var monthOff = xOff % yearImgWidth;
+
+            var year = Math.floor(xOff / yearImgWidth);
+            var monthOfYear = Math.min(11, Math.floor(monthOff / monthImgWidth));
+            // 1 extra border pixel at the left edge of the year:
+            var month = (year * 12) + monthOfYear;
+            var day = monthOff % 2 == 1 ? 15 : 1;
+            var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear + 1, 2) +
+                zeroPad(day, 2) + "000000";
+
+            $("displayYearEl").innerHTML = year + firstYear;
+            $("displayMonthEl").innerHTML = prettyMonths[monthOfYear];
+            // looks too jarring when it changes..
+            //$("displayDayEl").innerHTML=zeroPad(day,2);
+            var url = wbPrefix + dateString + '/' + wbCurrentUrl;
+            $("wm-graph-anchor").href = url;
+
+            if (curYear != year) {
+                var yrOff = year * yearImgWidth;
+                yearTracker.style.left = yrOff + "px";
+                curYear = year;
+            }
+            if (curMonth != month) {
+                var mtOff = year + (month * monthImgWidth) + 1;
+                monthTracker.style.left = mtOff + "px";
+                curMonth = month;
+            }
+        }
+
+        function hideToolbar() {
+            $("wm-ipp").style.display = "none";
+        }
+
+        function bootstrap() {
+            var $spk = $("wm-ipp-sparkline");
+            yearTracker = $D.createElement('div');
+            yearTracker.className = 'yt';
+            with(yearTracker.style) {
+                display = 'none';
+                width = yearImgWidth + "px";
+                height = imgHeight + "px";
+            }
+            monthTracker = $D.createElement('div');
+            monthTracker.className = 'mt';
+            with(monthTracker.style) {
+                display = 'none';
+                width = monthImgWidth + "px";
+                height = imgHeight + "px";
+            }
+            $spk.appendChild(yearTracker);
+            $spk.appendChild(monthTracker);
+
+            var $ipp = $("wm-ipp");
+            $ipp && disclaimElement($ipp);
+        }
+        return {
+            st: showTrackers,
+            mv: trackMouseMove,
+            h: hideToolbar,
+            bt: bootstrap
+        };
+    })();
+    </script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <link rel="image_src" type="image/jpeg" href="/imgs/facebook4.png" />
+</head>
+
+<body id="body" class="body_day">
+    <div id="fblike">
+        <!-- <iframe src="//www.facebook.com/plugins/like.php?href=tienvu" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+    </div>
+    <div class="share">
+        <a href="http://www.facebook.com/tienvuitdlu"><img id="iconfb" src="imgs/social/black/icon_fb.png" alt="hold"></a>
+        <a href="https://twitter.com/#!/tienvu"><img id="icontw" src="imgs/social/black/icon_tw.png" alt="hold"></a>
+    </div>
+    <div id="mute" class="muteoff" onmouseup="mute()">
+    </div>
+    <div id="alert" onmouseup="openno3d()">
+    </div>
+    <!-- <div id="maintheme" class="theme theme_day" onmouseup="themedesp()" style="position:fixed; top:12px; right:92px;">
+			<img class="thcirc" src="/imgs/social/white/theme.png" alt="hold"/>
+		</div> -->
+    <div id="themes" style="z-index:9999999">
+        <div class="theme theme_day" onmouseup="themesel('day')" style="position:absolute; top:0px; left:0px;">
+            <img class="thcirc" src="imgs/social/white/theme.png" alt="hold" />
+        </div>
+        <div class="theme theme_night" onmouseup="themesel('night')" style="position:absolute; top:27px; left:0px;">
+            <img class="thcirc" src="imgs/social/white/theme.png" alt="hold" />
+        </div>
+        <div class="theme theme_rainy" onmouseup="themesel('rainy')" style="position:absolute; top:54px; left:0px;">
+            <img class="thcirc" src="imgs/social/white/theme.png" alt="hold" />
+        </div>
+        <div class="theme theme_rainynight" onmouseup="themesel('rainynight')" style="position:absolute; top:81px; left:0px;">
+            <img class="thcirc" src="imgs/social/black/theme.png" alt="hold" />
+        </div>
+        <div class="theme theme_storm" onmouseup="window.location='/old.php?storm=1'" style="position:absolute; top:108px; left:0px;">
+            <img class="thcirc" src="imgs/social/white/theme.png" alt="hold" />
+        </div>
+        <div class="theme theme_snow" onmouseup="window.location='/old.php?snow=1'" style="position:absolute; top:135px; left:0px;">
+            <img class="thcirc" src="imgs/social/white/theme.png" alt="hold" />
+        </div>
+    </div>
+    <div id="botonera">
+        <div id="botabout" onmouseup="location.href='#about'" class="bot botabout"></div>
+        <div id="botwork" onmouseup="location.href='#work'" class="bot botwork"></div>
+        <div id="botblog" onmouseup="location.href='#blog'" class="bot botblog"></div>
+        <div id="botblog" onmouseup="location.href='#botonera'" class="bot botblog"></div>
+    </div>
+    <div id="loading">
+        <span id="loadtext">loading audio ... </span>
+        <div id="loadbar" class="loadbar_day"></div>
+        <div id="loadbar2" class="loadbar2_day"></div>
+    </div>
+    <div id="logo" class="logofr1"></div>
+    <div id="home">
+        <div id="" class="logofr1"></div>
+        <div id="botabout" onmouseup="location.href='#about'" class="bot botabout"></div>
+        <div id="botwork" onmouseup="location.href='#work'" class="bot botwork"></div>
+        <div id="botblog" onmouseup="location.href='#home'" class="bot botblog"></div>
+        <!-- <div id="botblog" onmouseup="location.href='#blog'" class="bot botblog"></div> -->
+    </div>
+    <div id="about" class="about_day">
+        Hello I am <strong>Vu</strong>, a web developer. With a passion for web design and programming. I want to create beauty products, body <strong>Tienvu.net</strong> competition where I exhibited their products. you can contact me via email: <strong>vulieumang@gmail.com</strong> or phone: <strong>+84986595475</strong>.
+        <br/> In addition to web programmers and designers with understanding I can support the issues of UI, UX and servers, domain name. security. Very happy to cooperate with you.
+        <br/> Cheer
+    </div>
+    <div id="works">
+        <h2 id="wh1" style="opacity: 1;">Company</h2>
+        <div id="work307" class="work work_day" style="width: 750px;">
+            <div class="col1"><a href="http://www.gcall.vn/">Gcall</a></div>
+            <div class="new"></div>
+            <!--<div class="blogicon invisible"><a href="#blog-seguimos_cazando_nubes" title="read more"><img src="/imgs/blog.png" alt="blog"/></a></div>-->
+            <div class="col3">Theme + Plugin</div>
+        </div>
+        <div id="work306" class="work work_day" style="width: 750px;">
+            <div class="col1"><a href="http://hackfair.vn">Hackfair.vn</a></div>
+            <div class="blogicon">
+                <a title="read more" href="#blog-seguimos_cazando_nubes"><img alt="blog" src="imgs/blog.png"></a>
+            </div>
+            <div class="col3">Design + Programing</div>
+        </div>
+        <div id="work5" class="work work_day" style="width: 750px;">
+            <div class="col1"><a href="http://startupinsider.vn/">Startupinsider.vn</a></div>
+            <div class="blogicon">
+                <a title="read more" href="#blog-beri_estudio_creativo_html"><img alt="blog" src="imgs/blog.png"></a>
+            </div>
+            <div class="col2"></div>
+            <div class="col3">Design + Programing</div>
+            <div class="separador"></div>
+        </div>
+        <h2 id="wh2" style="opacity: 1;">Ecomerce</h2>
+        <!--<div class="work work_" id="work101">
+				<div class="col1"><a href="/web/20120624054840/http://www.bershka.com/xmas">Bershka Christmas Microsite</a></div>
+				<div class="col2"><a href="/web/20120624054840/http://www.fiveisblue.com">Designed by Five is Blue</a></div>
+				<div class="col3">motion + programación</div>
+			</div>-->
+        <div id="work200" class="work work_day" style="width: 750px;">
+            <div class="col1"><a href="http://tictacwatch.com/">tictacwatch.com</a></div>
+            <div class="blogicon">
+                <a title="read more" href="#blog-content"><img alt="blog" src="imgs/blog.png"></a>
+            </div>
+            <!-- <div class="col2"><a href="">Designed by</a></div> -->
+            <div class="col3">Theme + Plugin</div>
+        </div>
+        <h2 id="wh4" style="opacity: 1;">API</h2>
+        <div id="work300" class="work work_day" style="width: 750px;">
+            <div class="col1"><a href="http://realhappyliving.com">realhappyliving.com</a></div>
+            <div class="col2">API, SYNC</div>
+            <div class="col3">Web Programing + API</div>
+        </div>
+        <h2 id="wh3" style="opacity: 1;">Other</h2>
+        <div id="work201" class="work work_day" style="width: 750px;">
+            <!-- <div class="blogicon"><a title="read more" href="#abc"><img alt="blog" src="imgs/blog.png"></a></div> -->
+            <div class="col1"><a href="javascript:void(0)">After effect,  Photoshop, Adobe Illustrator, Hosting, Server (Windows + Linux)</a></div>
+        </div>
+    </div>
+    <div id="blogg">
+        <div id="blogwrap">
+            <div class="blogwrapcont">
+                <div id="post0" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph0"><span class="fecha">15 de Abr, 2012</span><a href="#blog-beri_estudio_creativo_html">TienVu HTML</a>	</h2>
+                        <div id="post0foto" class="foto" style="height: 5px;">
+                            <a href="#blog-beri_estudio_creativo_html"><img alt="hold" src="imgs/tumbs/proy145.jpg"></a>
+                        </div> <a href="#blog-beri_estudio_creativo_html">BERI ESTUDIO CREATIVO es un espacio dedicado al Interiorismo y el Diseño Industrial.Proyectan, gestionan y ejecutan proyectos llave en mano para obra nueva o reformas de viviendas, pisos, locales comerciales de todo tipo, oficinas, restaurantes, stands...Cuentan con profesionales...</a>
+                    </div>
+                </div>
+                <div id="post1" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph1"><span class="fecha">15 de Mar, 2012</span><a href="#blog-papertoys_el_regalo_de_moda">Papertoys, el regalo de moda</a>	</h2>
+                        <div id="post1foto" class="foto" style="height: 5px;">
+                            <a href="#blog-papertoys_el_regalo_de_moda"><img alt="hold" src="imgs/tumbs/proy146.jpg"></a>
+                        </div> <a href="#blog-papertoys_el_regalo_de_moda">Os quiero presentar hoy este proyecto que fundamos hace poco y del cual nos sentimos especialmente orgullosos.&nbsp;En PaperToy diseñamos y montamos muñecos de papel personalizados, llamados custom papertoys, siempre diferentes según su dueño. Utilizamos simplemente un...</a>
+                    </div>
+                </div>
+                <div id="post2" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph2"><span class="fecha">14 de Feb, 2012</span><a href="#blog-plataforma_humaniatv_v20">Plataforma Humania.TV v.2.0</a>	</h2>
+                        <div id="post2foto" class="foto">
+                            <a href="#blog-plataforma_humaniatv_v20"><img alt="hold" src="imgs/tumbs/proy144.jpg"></a>
+                        </div> <a href="#blog-plataforma_humaniatv_v20">Humania.tv es un sitio donde la sociedad civil muestra a la misma sociedad civil la inmensa variedad diaria de acciones por la mejora de este mundo. Cualquier modalidad de asociación de personas, con un objetivo enfocado hacia la dignidad del ser humano y el desarrollo sostenible, puede...</a>
+                    </div>
+                </div>
+                <div id="post3" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph3"><span class="fecha">22 de Nov, 2011</span><a href="#blog-seguimos_cazando_nubes">Seguimos cazando nubes</a>	</h2>
+                        <div id="post3foto" class="foto" style="height: 5px;">
+                            <a href="#blog-seguimos_cazando_nubes"><img alt="hold" src="imgs/tumbs/proy141.jpg"></a>
+                        </div> <a href="#blog-seguimos_cazando_nubes">Después de la mudanza de oficinas, SOLO INTERACTIVE STUDIO&nbsp;llega para quedarse. Aunque el estudio está formado básicamente por mí, ahora tengo colaboradores, programadores y expertos en comunicación y SEO, que conoceréis pronto en este mismo blog....</a>
+                    </div>
+                </div>
+                <div id="post4" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph4"><span class="fecha">28 de Feb, 2011</span><a href="#blog-spazia_wellness_spaces">Lorem Ipsum is simply dummy text</a>	</h2>
+                        <div id="post4foto" class="foto" style="height: 5px;">
+                            <a href="#blog-spazia_wellness_spaces"><img alt="hold" src="imgs/tumbs/proy133.jpg"></a>
+                        </div> <a href="#blog-spazia_wellness_spaces">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+                    </div>
+                </div>
+                <div id="post5" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph5"><span class="fecha">18 de Feb, 2011</span><a href="#blog-bershka_campana_navidad_2010">Lorem Ipsum is simply dummy text</a>	</h2>
+                        <div id="post5foto" class="foto">
+                            <a href="#blog-bershka_campana_navidad_2010"><img alt="hold" src="imgs/tumbs/proy147.jpg"></a>
+                        </div> <a href="#blog-bershka_campana_navidad_2010">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+                    </div>
+                </div>
+            </div>
+            <div style="left:990px" class="blogwrapcont">
+                <div id="post6" class="post post_day" style="opacity: 1;">
+                    <div class="postcont">
+                        <h2 id="ph6"><span class="fecha">23 de Nov, 2010</span><a href="#blog-fundacion_chirivella_soriano_virtual">Fundación Chirivella Soriano Virtual</a>	</h2>
+                        <div id="post6foto" class="foto">
+                            <a href="#blog-fundacion_chirivella_soriano_virtual"><img alt="hold" src="imgs/tumbs/proy134.jpg"></a>
+                        </div> <a href="#blog-fundacion_chirivella_soriano_virtual">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="steps" style="display: block;">
+            <div onmouseup="step(0)" class="step stepsel" id="step0"></div>
+            <div onmouseup="step(1)" class="step stepnosel" id="step1"></div>
+        </div>
+    </div>
+    <!-- <div id="beri_estudio_creativo_html" class="superpost post_day linksund" style="width: 990px;">
+        <div class="superpostcont">
+            <h2><span class="fecha">15 de Abr, 2012</span>
+					<span id="beri_estudio_creativo_htmltit">BERI estudio creativo HTML</span>
+					<span class="by">by SOLO in PROYECTOS HTML</span>
+				</h2>
+            <div onmouseup="history.back(-1); " class="close"></div>
+            <div class="foto"><img alt="hold" src="imgs/tumbs/proy145.jpg"></div>
+            <div class="col">
+              
+            </div>
+            <div class="col">
+               
+            </div>
+            <div style="margin:0px" class="col">
+              
+                <p>Enlace: <a target="_blank" href="#/">#</a></p>
+            </div>
+            <div style="display:none" id="beri_estudio_creativo_htmldesc"></div>
+        </div>
+    </div> -->
+    <div id="nubecita" style="top: 80px;">
+        <div id="nubecitaimg" style="display: none;"></div>
+    </div>
+    <div class="html5"></div>
+    <div class="html6">
+        <a href="#home" title="Tienvu Studio"><img src="imgs/logo-tienvustudio.png" /></a>
+    </div>
+    <div class="contact"></div>
+    <div class="weather"><img id="imgweather" src="imgs/weather/white/luna.png" alt="hold" /></div>
+    <div id="fondo"></div>
+    <div id="div3d"></div>
+    <!--<embed src="http://lienminh.garena.vn/teaser/teaser_TetSkill/media/singlemp3player.swf?file=http://lienminh.garena.vn/teaser/teaser_Christmas3/media/s2.mp3&autoStart=true&repeatPlay=true&songVolume=50" quality="high" width="1px" height="1px">-->
+</body>
+
+</html>

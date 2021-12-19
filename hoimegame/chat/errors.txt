@@ -1,0 +1,2 @@
+
+2012-11-11 06:27:10 Table 'socks_vuchat.blab6_online' doesn't exist

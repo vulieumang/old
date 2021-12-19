@@ -1,0 +1,1041 @@
+/*
+Theme Name: The Christmas Tree from Stewardship
+Theme URI: http://www.thechristmastree.org.uk
+Description: Bespoke wordpress theme for the 2011 christmass campaign for Stewardship.
+Version: 1.0
+Author: Steve Oldham
+Author URI: http://vdotgood.com
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+
+body{
+color:#aaa;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12px;
+background:#c70000 url(../../../wp-content/themes/stewardship/images/bg.jpg) top center;
+overflow-x:hidden;
+}
+
+body, html{
+height:100%;
+}
+
+/* ------------------------------ */
+/* --------- MAIN LAYOUT -------- */
+/* ------------------------------ */
+div#main{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:3550px;
+overflow:hidden;
+}
+div#main_background{
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:1750px;
+background:#c70000 url(../../../wp-content/themes/stewardship/images/bg.jpg) top center;
+z-index:0;	
+}
+div#main_header{
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:140px;
+background:url(../../../wp-content/themes/stewardship/images/header_bg.png) repeat-x top left;
+z-index:50;
+}
+
+
+/* -------------------------------- */
+/* --------- CONTENT BOXES -------- */
+/* -------------------------------- */
+div#main_overlay{
+display:none;
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+z-index:888;
+}
+div#main_box{
+display:none;
+position:absolute;
+top:100px;
+left:50%;
+z-index:999;
+}
+div#main_box_inner{
+position:absolute;
+left:-340px;
+width:680px;
+}
+span#main_box_close{
+position:absolute;
+top:-20px;
+right:-20px;
+display:block;
+width:48px;
+height:50px;
+cursor:pointer;
+background:url(../../../wp-content/themes/stewardship/images/box_close.png) left no-repeat;
+z-index:1001;
+}
+span#main_box_close:hover{
+background-position:-46px 0px;
+}
+div#main_box_inner div.content{
+-webkit-box-shadow: 0px 0px 10px #000; 
+-moz-box-shadow: 0px 0px 10px #000; 
+box-shadow: 0px 0px 10px #000;
+-webkit-border-radius: 20px; 
+-moz-border-radius: 20px; 
+border-radius: 20px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+z-index:1000;
+}
+
+/* --------- CONTENT BOXES: STORY -------- */
+div#main_box_story{
+position:relative;
+width:680px;
+height:624px;
+background:url(../../../wp-content/themes/stewardship/images/bg_story0.png) top center no-repeat;
+}
+div#main_box_story.short{ background:url(../../../wp-content/themes/stewardship/images/bg_story3.png) top center no-repeat; height:553px; }
+div#main_box_story.long{ background:url(../../../wp-content/themes/stewardship/images/bg_story7.png) top center no-repeat; height:709px; }
+div#main_box_story.xtralong{ background:url(../../../wp-content/themes/stewardship/images/bg_story5.png) top center no-repeat; height:749px; }
+div#main_box_story div.story{
+position:relative;
+top:20px;
+left:20px;
+width:640px;
+}
+div.story div.story_thumb{
+position:absolute;
+width:640px;
+height:340px;
+overflow:hidden;
+}
+div.story div.story_content{
+position:relative;
+top:360px;
+padding:0 30px;
+text-align:justify;
+color:#b11244;
+font-size:13px;
+}
+div.story div.story_content p{
+margin:0 0 10px 0;
+}
+div.story div.story_content h3{
+font-size:40px;
+}
+
+/* --------- CONTENT BOXES: NOTE -------- */
+div#main_box_note{
+position:relative;
+width:680px;
+height:403px;
+background:url(../../../wp-content/themes/stewardship/images/box_video.png) top center no-repeat;
+}
+div#main_box_note div.note{
+position:relative;
+top:20px;
+left:20px;
+width:640px;
+}
+div.note div.note_content{
+padding:30px 30px 0 30px;
+text-align:justify;
+color:#b11244;
+font-size:16px;
+}
+div.note div.note_content p{
+margin:0 0 20px 0;
+}
+div.note div.note_content h3{
+font-size:40px;
+}
+
+/* --------- CONTENT BOXES: VIDEO -------- */
+div#main_box_video{
+position:relative;
+width:680px;
+height:403px;
+background:url(../../../wp-content/themes/stewardship/images/box_video.png) top center no-repeat;
+}
+div#main_box_video div.video{
+position:absolute;
+top:20px;
+left:20px;
+width:640px;
+height:360px;
+overflow:hidden;
+background:#000;
+z-index:1020;
+}
+div#main_box_video div.video.ontop{
+z-index:1025;
+}
+div#main_box_share{
+position:absolute;
+bottom:-100px;
+right:0px;
+width:280px;
+height:112px;
+background:url(../../../wp-content/themes/stewardship/images/sign_share.png) top center no-repeat;
+}
+.share span{
+float:left;
+position:relative;
+top:48px;
+left:35px;
+margin:0 12px 0 0;
+overflow:hidden;
+}
+html.ie7 .share span{ left:65px; } /* ADJUSTMENT FOR NO GOOGLE+ */
+.share span.share_tw{ top:50px; }
+
+/* --------- SHARING LINKS -------- */
+html.borderradius.boxshadow span.social{
+-webkit-box-shadow: 0px 0px 10px #222; 
+-moz-box-shadow: 0px 0px 10px #222; 
+box-shadow: 0px 0px 10px #222;
+-webkit-border-radius: 3px; 
+-moz-border-radius: 3px; 
+border-radius: 3px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+span.share_tw{ width:55px; height:20px; }
+span.share_twf{ width:61px; height:20px; }
+span.share_fb{ width:50px; height:24px; }
+span.share_gp{ width:38px; height:24px; }
+html.ie7 span.share_gp{ display:none; } /* GOOGLE DOESN'T SUPPORT <IE8...LEGENDS! */
+span.share_email a{ display:block; width:24px; height:24px; background:url(../../../wp-content/themes/stewardship/images/icon_email.png) top center no-repeat; }
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+display: none !important;}
+
+
+/* ---------------------------- */
+/* --------- MAIN SIGN -------- */
+/* ---------------------------- */
+div#main_sign{
+position:fixed;
+top:70px;
+left:50%;
+width:425px;
+z-index:40;
+}
+div#main_sign div#sign_candy{
+position:relative;
+left:-430px;
+width:425px;
+height:340px;
+background:url(../../../wp-content/themes/stewardship/images/sign_candy.png) no-repeat;
+z-index:15;
+}
+div#sign_candy div#sign_candy_inner{
+position:absolute;
+top:121px;
+left:75px;
+width:280px;
+height:182px;
+overflow:hidden;
+}
+div#sign_candy_inner div#sign_candy_title{
+position:absolute;
+top:0px;
+left:0px;
+}
+div#sign_candy_inner div#sign_candy_info{
+position:absolute;
+top:200px;
+left:5px;
+width:270px;
+color:#d61248;
+font-size:26px;
+line-height:24px;
+}
+div#sign_candy_inner div#sign_candy_info p{
+text-align:justify;
+margin:0 0 10px 0;
+}
+div#main_sign div#sign_wood{
+position:relative;
+left:-360px;
+top:-28px;
+width:294px;
+height:151px;
+font-size:54px;
+font-weight:normal;
+text-shadow: 2px 2px 0px #4e250f;
+background:url(../../../wp-content/themes/stewardship/images/sign_wood.png) no-repeat;
+z-index:10;
+}
+div#main_sign div#sign_wood span{
+display:block;
+position:relative;
+left:28px;
+top:38px;
+width:235px;
+height:75px;
+line-height:75px;
+text-align:center;
+color:#e3b393;
+cursor:pointer;
+}
+div#main_sign div#sign_wood span:hover{
+color:#fbb61f;
+}
+div#main_sign div#sign_sharing{
+position:relative;
+left:-330px;
+top:-40px;
+width:240px;
+height:40px;
+z-index:10;
+}
+div#main_sign div#sign_sharing span{
+float:left; margin:0 20px 0 0; overflow:hidden;
+}
+div#main_sign div#sign_sharing span.share_twf{ margin:2px 15px 0 0; }
+div#main_sign div#sign_sharing span.share_email{ margin:0; }
+
+/* ------------------------------- */
+/* --------- INITIAL VIEW -------- */
+/* ------------------------------- */
+div#view_enter{
+position:absolute;
+top:110px;
+left:50%;
+height:800px;
+}
+div#view_enter div#enter_sf{
+position:fixed;
+top:60px;
+left:50%;
+z-index:10;
+}
+div#view_enter div#enter_sf_inner{
+position:relative;
+left:-460px;
+top:90px;
+width:971px;
+height:608px;
+background:url(../../../wp-content/themes/stewardship/images/initial_sf.png) no-repeat;
+}
+div#view_enter div#enter_ct{
+position:absolute;
+left:-130px;
+width:553px;
+height:737px;
+background:url(../../../wp-content/themes/stewardship/images/ct_small.png) no-repeat;
+z-index:15;
+}
+
+
+/* ---------------------------- */
+/* --------- MAIN VIEW -------- */
+/* ---------------------------- */
+div#view_content, div#overlay_decorations{
+position:absolute;
+top:2000px;
+left:50%;
+height:auto;
+}
+div#overlay_decorations{ z-index:50; }
+
+/* --------- SPARKLES LAYER -------- */
+div#view_content canvas#sparkles{
+position:absolute;
+top:-300px;
+left:-540px;
+width:1000px;
+height:1780px;
+z-index:10;
+}
+html.no-canvas div#view_content canvas#sparkles{ display:none; }
+
+/* --------- LINKS OVER SPARKLES -------- */
+div.content-star{
+position:relative;
+top:-22px;
+left:-64px;
+width:80px;
+height:80px;
+cursor:pointer;
+}
+html.ie9 div.content-star{ background:rgba(255,255,255,0.01); z-index:60; }
+
+/* --------- GRAPHICS LAYER -------- */
+div#view_content div#content_star{
+position:absolute;
+top:-100px;
+left:-135px;
+width:234px;
+height:204px;
+background:url(../../../wp-content/themes/stewardship/images/ct_large_star.png) no-repeat;
+z-index:9;
+}
+div#view_content div#content_ct{
+position:absolute;
+top:10px;
+left:-581px;
+width:1083px;
+height:1373px;
+background:url(../../../wp-content/themes/stewardship/images/ct_large.png) no-repeat;
+z-index:8;
+}
+div#content_string{
+position:absolute;
+top:330px;
+left:-775px;
+width:1532px;
+height:162px;
+background:url(../../../wp-content/themes/stewardship/images/stocking_string.png) no-repeat;
+z-index:5;
+}
+div#overlay_decorations ul#content_decorations{ position:absolute; top:90px; left:-581px; width:1083px; height:1080px; z-index:20; }
+
+/* --------- CONTROLS -------- */
+div#main_controls{
+position:fixed;
+bottom:-200px;
+right:10px;
+width:230px;
+z-index:60;
+}
+div#main_controls div#control_snow{
+position:absolute;
+left:0px;
+bottom:0px;
+width:70px;
+height:65px;
+cursor:pointer;
+background:url(../../../wp-content/uploads/2011/12/snow_bg.png) no-repeat top center;
+}
+div#main_controls div#control_lights{
+position:absolute;
+right:0px;
+bottom:0px;
+width:155px;
+}
+div#lightometer{
+position:absolute;
+bottom:0px;
+width:155px;
+height:265px;
+height:65px;
+text-align:center;
+overflow:hidden;
+}
+div#lightometer div#lightometer_bar{
+position:absolute;
+left:0px;
+bottom:0px;
+width:155px;
+height:65px;
+background:url(../../../wp-content/uploads/2011/12/lightometer_bar_bg.png) no-repeat center;
+}
+div#lightometer div#lightometer_bar span{
+font-family: 'CiderScript'; position:absolute; top:15px; left:15px; width:120px; height:35px;
+line-height:35px; color:#fbb61f; text-shadow:1px 1px 0px #a46f08; font-size:26px;
+}
+div#lightometer ul#lightometer_options{
+position:absolute;
+left:18px;
+bottom:45px;
+bottom:-200px;
+width:118px;
+height:220px;
+font-family: 'CiderScript';
+font-size:26px;
+color:#d61248;
+background:url(../../../wp-content/uploads/2011/12/lightometer_options_bg.png) no-repeat 0px center;
+}
+ul#lightometer_options li{
+position:relative;
+top:14px;
+}
+div#lightometer ul#lightometer_options li{ width:100%; cursor:pointer; }
+div#lightometer ul#lightometer_options li:hover{ color:#f35f8e; }
+li#option_wow{ height:55px; line-height:55px; }
+li#option_super{ height:47px; line-height:47px; }
+li#option_flash{ height:45px; line-height:45px; }
+li#option_off{ height:40px; line-height:40px; }
+
+span#lights_title, span#snow_title{
+position:absolute;
+bottom:0px;
+width:100%;
+font-family: 'ChineseRocksRegular';
+font-size:26px;
+text-align:center;
+}
+span#lights_title{ color:#fbb61f; text-shadow:2px 2px 0px #a46f08,0px 0px 8px #222;; }
+span#snow_title{ color:#f46a90; text-shadow:2px 2px 0px #b11244,0px 0px 8px #222; }
+
+div#main_warning{
+position:fixed;
+left:50%;
+bottom:3000px;
+z-index:999;
+}
+div#main_warning_inner{
+position:relative;
+top:-65px;
+left:-305px;
+height:135px;
+width:610px;
+color:#fff; 
+text-shadow:2px 2px 0px #d61248;
+}
+div#main_warning div#warning_text{ position:absolute; top:8px; left:0px; }
+div#main_warning h3{ font-size:60px; }
+div#main_warning p{ font-size:31px; }
+div#main_warning div#warning_switch{ position:absolute; right:0px; width:202px; height:135px; background:url(../../../wp-content/uploads/2011/12/switch_bg.png) no-repeat bottom; }
+div#main_warning div#warning_switch.on{ background-position:top; }
+div#warning_switch span#lever{ position:absolute; left:33px; top:-60px; display:block; width:52px; height:127px; cursor:pointer; background:url(../../../wp-content/uploads/2011/12/lever_bg.png) no-repeat top; }
+div#warning_switch span#lever.on{ top:60px; background-position:bottom; }
+
+
+/* -------------------------------- */
+/* --------- DECORATIONS -------- */
+/* -------------------------------- */
+/* LIGHTS */
+div#content_ct ul#ct_lights{ position:absolute; top:0px; left:0px; z-index:15; }
+ul#ct_lights li{ position:absolute; width:80px; height:95px; background:url(../../../wp-content/themes/stewardship/images/lightbulbs.png) no-repeat 0px center; }
+ul#ct_lights li.white{ background-position:-80px center; }
+ul#ct_lights li.purple{ background-position:-160px center; }
+ul#ct_lights li.red{ background-position:-240px center; }
+ul#ct_lights li.yellow{ background-position:-320px center; }
+ul#ct_lights li.green{ background-position:-400px center; }
+ul#ct_lights li.blue{ background-position:-480px center; }
+ul#ct_lights li#light1{ top: 115px; left: 590px; }
+ul#ct_lights li#light2{ top: 170px; left: 510px; }
+ul#ct_lights li#light3{ top: 200px; left: 418px; }
+ul#ct_lights li#light4{ top: 260px; left: 520px; }
+ul#ct_lights li#light5{ top: 265px; left: 663px; }
+ul#ct_lights li#light6{ top: 325px; left: 570px; }
+ul#ct_lights li#light7{ top: 350px; left: 420px; }
+ul#ct_lights li#light8{ top: 340px; left: 320px; }
+ul#ct_lights li#light9{ top: 455px; left: 420px; }
+ul#ct_lights li#light10{ top: 515px; left: 540px; }
+ul#ct_lights li#light11{ top: 520px; left: 660px; }
+ul#ct_lights li#light12{ top: 515px; left: 740px; }
+ul#ct_lights li#light13{ top: 600px; left: 635px; }
+ul#ct_lights li#light14{ top: 645px; left: 485px; }
+ul#ct_lights li#light15{ top: 645px; left: 340px; }
+ul#ct_lights li#light16{ top: 620px; left: 205px; }
+ul#ct_lights li#light17{ top: 725px; left: 300px; }
+ul#ct_lights li#light18{ top: 805px; left: 435px; }
+ul#ct_lights li#light19{ top: 850px; left: 590px; }
+ul#ct_lights li#light20{ top: 855px; left: 750px; }
+ul#ct_lights li#light21{ top: 835px; left: 880px; }
+ul#ct_lights li#light22{ top: 940px; left: 780px; }
+ul#ct_lights li#light23{ top: 1015px; left: 645px; }
+ul#ct_lights li#light24{ top: 1060px; left: 490px; }
+ul#ct_lights li#light25{ top: 1078px; left: 330px; }
+ul#ct_lights li#light26{ top: 1070px; left: 190px; }
+ul#ct_lights li#light27{ top: 1045px; left: 60px; }
+
+/* BAUBELS */
+ul#content_decorations li.baubel{ position:absolute; top:200px; cursor:pointer; background:url(../../../wp-content/themes/stewardship/images/sprite_baubels.png) no-repeat 0px top; }
+ul#content_decorations li.baubel1{ width:38px; height:106px; background-position:0px -4px; }
+ul#content_decorations li.baubel2{ width:42px; height:93px; background-position:-38px -4px; }
+ul#content_decorations li.baubel3{ width:53px; height:55px; background-position:-80px top; }
+ul#content_decorations li.baubel4{ width:62px; height:63px; background-position:-135px top; }
+ul#content_decorations li#baubel1{ top:100px; left:480px; }
+ul#content_decorations li#baubel2{ top:300px; left:550px; }
+ul#content_decorations li#baubel3{ top:390px; left:340px; }
+ul#content_decorations li#baubel4{ top:520px; left:490px; }
+ul#content_decorations li#baubel5{ top:520px; left:700px; }
+ul#content_decorations li#baubel6{ top:810px; left:170px; }
+ul#content_decorations li#baubel7{ top:750px; left:340px; }
+ul#content_decorations li#baubel8{ top:790px; left:490px; }
+ul#content_decorations li#baubel9{ top:670px; left:750px; }
+ul#content_decorations li#baubel10{ top:800px; left:810px; }
+ul#content_decorations li#baubel11{ top:955px; left:180px; }
+ul#content_decorations li#baubel12{ top:920px; left:335px; }
+ul#content_decorations li#baubel13{ top:930px; left:570px; }
+ul#content_decorations li#baubel14{ top:970px; left:920px; }
+
+/* GINGER BREAD MEN */
+ul#content_decorations li.gbm{ position:absolute; top:200px; width:70px; height:90px; cursor:pointer; background:url(../../../wp-content/themes/stewardship/images/sprite_mix.png) no-repeat left top; }
+ul#content_decorations li#gbm1{ top:200px; left:440px; }
+ul#content_decorations li#gbm2{ top:680px; left:640px; }
+ul#content_decorations li#gbm3{ top:890px; left:230px; }
+
+/* CANDY CANES */
+ul#content_decorations li.candycane{ position:absolute; top:200px; width:40px; height:87px; cursor:pointer; background:url(../../../wp-content/themes/stewardship/images/sprite_candycane.png) no-repeat left top; }
+ul#content_decorations li.candycane.bite1{ background-position: -40px top; }
+ul#content_decorations li.candycane.bite2{ background-position: -80px top; }
+ul#content_decorations li.candycane.bite3{ background-position: -120px top; }
+ul#content_decorations li.candycane.bite4{ background-position: -160px top; }
+ul#content_decorations li.candycane.odd{ background-position: right bottom; }
+ul#content_decorations li.candycane.bite1.odd{ background-position: -92px bottom; }
+ul#content_decorations li.candycane.bite2.odd{ background-position: -52px bottom; }
+ul#content_decorations li.candycane.bite3.odd{ background-position: -12px bottom; }
+ul#content_decorations li.candycane.bite4.odd{ background-position: 28px bottom; }
+ul#content_decorations li#candycane1{ top:185px; left:620px; }
+ul#content_decorations li#candycane2{ top:455px; left:390px; }
+ul#content_decorations li#candycane3{ top:750px; left:240px; }
+ul#content_decorations li#candycane4{ top:655px; left:600px; }
+ul#content_decorations li#candycane5{ top:955px; left:120px; }
+ul#content_decorations li#candycane6{ top:970px; left:820px; }
+
+/* NUTS */
+ul#content_decorations li.nut{ position:absolute; top:200px; width:40px; height:35px; cursor:pointer; background:url(../../../wp-content/themes/stewardship/images/sprite_mix.png) no-repeat right top; }
+ul#content_decorations li#nut1{ top:420px; left:660px; }
+ul#content_decorations li#nut2{ top:420px; left:680px; }
+ul#content_decorations li#nut3{ top:520px; left:300px; }
+ul#content_decorations li#nut4{ top:700px; left:500px; }
+ul#content_decorations li#nut5{ top:770px; left:150px; }
+ul#content_decorations li#nut6{ top:920px; left:400px; }
+ul#content_decorations li#nut7{ top:920px; left:420px; }
+ul#content_decorations li#nut8{ top:1000px; left:980px; }
+
+/* BELLS */
+ul#content_decorations li.bell{ position:absolute; top:200px; width:40px; height:50px; cursor:pointer; background:url(../../../wp-content/themes/stewardship/images/sprite_mix.png) no-repeat right bottom; }
+ul#content_decorations li#bell1{ top:300px; left:650px; }
+ul#content_decorations li#bell2{ top:300px; left:670px; }
+ul#content_decorations li#bell3{ top:620px; left:425px; }
+ul#content_decorations li#bell4{ top:615px; left:445px; }
+ul#content_decorations li#bell5{ top:920px; left:830px; }
+ul#content_decorations li#bell6{ top:920px; left:850px; }
+
+/* STOCKINGS */
+ul#content_decorations li.stocking{ position:absolute; cursor:pointer; top:200px; }
+ul#content_decorations li#stocking1{ top:265px; left:-120px; width:148px; height:257px; background:url(../../../wp-content/themes/stewardship/images/stocking1.png) no-repeat; }
+ul#content_decorations li#stocking2{ top:320px; left:100px; width:183px; height:254px; background:url(../../../wp-content/themes/stewardship/images/stocking2.png) no-repeat; }
+ul#content_decorations li#stocking3{ top:325px; left:860px; width:148px; height:236px; background:url(../../../wp-content/themes/stewardship/images/stocking3.png) no-repeat; }
+ul#content_decorations li#stocking4{ top:270px; left:1100px; width:150px; height:241px; background:url(../../../wp-content/themes/stewardship/images/stocking4.png) no-repeat; }
+ul#content_decorations li.stocking span{
+position:absolute;
+display:block;
+white-space:nowrap;
+cursor:pointer;
+font-family: 'CiderScript';
+text-align:center;
+color:#fff; 
+text-shadow:2px 2px 0px #d61248;
+font-size:18px;
+}
+div#stocking_resizer{ font-size:30px; white-space:nowrap; }
+ul#content_decorations li#stocking1 span{
+top:57px;
+left:43px;
+width:95px;
+height:38px;
+line-height:38px;
+-webkit-transform: rotate(32deg);  
+-moz-transform: rotate(32deg);  
+-ms-transform: rotate(32deg);  
+-o-transform: rotate(32deg);  
+transform: rotate(32deg);
+zoom: 1;
+}
+html.ie7 ul#content_decorations li#stocking1 span, html.ie8 ul#content_decorations li#stocking1 span{
+top:33px;
+left:36px;
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.848048096156426, M12=-0.5299192642332049, M21=0.5299192642332049, M22=0.848048096156426, sizingMethod='auto expand');
+}
+ul#content_decorations li#stocking2 span{
+top:60px;
+left:55px;
+width:115px;
+height:55px;
+line-height:55px;
+-webkit-transform: rotate(40deg);  
+-moz-transform: rotate(40deg);  
+-ms-transform: rotate(40deg);  
+-o-transform: rotate(40deg);  
+transform: rotate(40deg);
+zoom: 1;
+}
+html.ie7 ul#content_decorations li#stocking2 span, html.ie8 ul#content_decorations li#stocking2 span{
+top:30px;
+left:50px;
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7660444431189781, M12=-0.6427876096865393, M21=0.6427876096865393, M22=0.7660444431189781, sizingMethod='auto expand');
+}
+ul#content_decorations li#stocking3 span{
+top:45px;
+left:15px;
+width:108px;
+height:50px;
+line-height:50px;
+-webkit-transform: rotate(10deg);  
+-moz-transform: rotate(10deg);  
+-ms-transform: rotate(10deg);  
+-o-transform: rotate(10deg);  
+transform: rotate(10deg);
+zoom: 1;
+}
+html.ie7 ul#content_decorations li#stocking3 span, html.ie8 ul#content_decorations li#stocking3 span{
+top:37px;
+left:10px;
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.984807753012208, M12=-0.17364817766693033, M21=0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
+}
+ul#content_decorations li#stocking4 span{
+top:48px;
+left:57px;
+width:78px;
+height:40px;
+line-height:40px;
+-webkit-transform: rotate(24deg);  
+-moz-transform: rotate(24deg);  
+-ms-transform: rotate(24deg);  
+-o-transform: rotate(24deg);  
+transform: rotate(24deg);
+zoom: 1;
+}
+html.ie7 ul#content_decorations li#stocking4 span, html.ie8 ul#content_decorations li#stocking4 span{
+top:33px;
+left:54px;
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9135454576426009, M12=-0.40673664307580015, M21=0.40673664307580015, M22=0.9135454576426009, sizingMethod='auto expand');
+}
+
+
+/* ---------------------------------- */
+/* --------- STOCKING EDITOR -------- */
+/* ---------------------------------- */
+div#content_stocking{
+position:fixed;
+left:50%;
+bottom:3000px;
+height:750px;
+width:430px;
+z-index:999;
+}
+div#content_stocking div#stocking_ribbon{
+position:absolute;
+top:0px;
+left:-82px;
+width:159px;
+height:649px;
+background:url(../../../wp-content/themes/stewardship/images/stocking_bow.png) no-repeat;
+z-index:1001;
+}
+div#content_stocking div#stocking_input{
+position:absolute;
+top:600px;
+left:-215px;
+width:430px;
+height:136px;
+-webkit-box-shadow: 0px 0px 20px #222; 
+-moz-box-shadow: 0px 0px 20px #222; 
+box-shadow: 0px 0px 20px #222;
+-webkit-border-radius: 20px; 
+-moz-border-radius: 20px; 
+border-radius: 20px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+background:url(../../../wp-content/themes/stewardship/images/stocking_input_bg.png) no-repeat;
+z-index:1000;
+}
+div#content_stocking div#stocking_input input{
+position:absolute;
+top:22px;
+left:23px;
+width:383px;
+height:84px;
+padding:2px 0 0 0;
+font-family: 'CiderScript';
+font-size:50px;
+text-align:center;
+color:#d61248;
+border:none;
+}
+div#content_stocking div#stocking_btns{
+position:absolute;
+bottom:-80px;
+left:-95px;
+width:190px;
+height:110px;
+background:url(../../../wp-content/themes/stewardship/images/stocking_confirm_bg.png) no-repeat;
+}
+div#content_stocking div#stocking_btns span{
+float:left;
+position:relative;
+top:36px;
+left:32px;
+display:block;
+width:64px;
+height:50px;
+cursor:pointer;
+}
+div#stocking_btns span#stocking_yes{
+background:url(../../../wp-content/themes/stewardship/images/stocking_confirm_yes.png) no-repeat top;
+}
+div#stocking_btns span#stocking_no{
+background:url(../../../wp-content/themes/stewardship/images/stocking_confirm_no.png) no-repeat top;
+}
+div#stocking_btns span#stocking_yes:hover, div#stocking_btns span#stocking_no:hover{
+background-position:center -53px;
+}
+
+
+/* ----------------------------- */
+/* --------- SNOWFLAKES -------- */
+/* ----------------------------- */
+div#view_content div#content_sf_left, div#view_content div#content_sf_right{
+position:fixed;
+left:50%;
+top:2200px;
+z-index:1;
+}
+div#content_sf_left_inner{
+position:relative;
+left:-570px;
+width:368px;
+height:1028px;
+background:url(../../../wp-content/themes/stewardship/images/sf_large_left.png) no-repeat;
+}
+div#content_sf_right_inner{
+position:relative;
+left:30px;
+width:511px;
+height:1028px;
+background:url(../../../wp-content/themes/stewardship/images/sf_large_right.png) no-repeat;
+}
+
+
+/* ------------------------------ */
+/* --------- MAIN FOOTER -------- */
+/* ------------------------------ */
+div#main_footer{
+position:absolute;
+left:0px;
+bottom:0px;
+width:100%;
+height:381px;
+background:url(../../../wp-content/themes/stewardship/images/footer_bg_1px.jpg) repeat-x;
+}
+div#floor{
+position:absolute;
+left:0px;
+bottom:0px;
+width:100%;
+height:381px;
+background:url(../../../wp-content/themes/stewardship/images/footer_bg.jpg) no-repeat center;
+z-index:5;
+}
+div#gifts{
+position:absolute;
+left:50%;
+bottom:0px;
+width:100%;
+}
+div#gifts_inner{
+position:absolute;
+left:-432px;
+bottom:130px;
+width:825px;
+height:275px;
+margin:0 auto;
+background:url(../../../wp-content/themes/stewardship/images/gifts.png) no-repeat;
+z-index:15;
+}
+div#gifts_inner a#gift_give{
+position:absolute;
+left:365px;
+top:85px;
+font-size:36px;
+text-decoration:none;
+color:#fff;
+}
+div#gifts_inner a#gift_give:hover{
+color:#e30000;
+}
+div#gifts_inner a#gift_receive{
+position:absolute;
+left:450px;
+top:185px;
+font-size:19px;
+text-decoration:none;
+color:#e30000;
+text-align: center;
+}
+div#gifts_inner a#gift_receive:hover{
+color:#9731b9;
+}
+div#shadow{
+position:absolute;
+left:-425px;
+bottom:125px;
+width:804px;
+height:107px;
+background:url(../../../wp-content/themes/stewardship/images/ct_large_shadow.png) no-repeat;
+z-index:10;
+}
+div#legal{
+width:600px;
+margin:0 auto;
+position:relative;
+top:325px;
+left:-50px;
+font-size:11px;
+text-align:center;
+color:#360b04;
+z-index:40;
+}
+
+
+
+/* --------------------------------- */
+/* --------- USEFUL CLASSES -------- */
+/* --------------------------------- */
+.hide-left{
+left:-9999px;
+}
+.rotate5{
+-webkit-transform: rotate(5deg);  
+-moz-transform: rotate(5deg);  
+-ms-transform: rotate(5deg);  
+-o-transform: rotate(5deg);  
+transform: rotate(5deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9961946980917455, M12=-0.08715574274765817, M21=0.08715574274765817, M22=0.9961946980917455, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-5{
+-webkit-transform: rotate(-5deg);  
+-moz-transform: rotate(-5deg);  
+-ms-transform: rotate(-5deg);  
+-o-transform: rotate(-5deg);  
+transform: rotate(-5deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9961946980917455, M12=0.08715574274765817, M21=-0.08715574274765817, M22=0.9961946980917455, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate10{
+-webkit-transform: rotate(10deg);  
+-moz-transform: rotate(10deg);  
+-ms-transform: rotate(10deg);  
+-o-transform: rotate(10deg);  
+transform: rotate(10deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.984807753012208, M12=-0.17364817766693033, M21=0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-10{
+-webkit-transform: rotate(-10deg);  
+-moz-transform: rotate(-10deg);  
+-ms-transform: rotate(-10deg);  
+-o-transform: rotate(-10deg);  
+transform: rotate(-10deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.984807753012208, M12=0.17364817766693033, M21=-0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate15{
+-webkit-transform: rotate(15deg);  
+-moz-transform: rotate(15deg);  
+-ms-transform: rotate(15deg);  
+-o-transform: rotate(15deg);  
+transform: rotate(15deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9659258262890683, M12=-0.25881904510252074, M21=0.25881904510252074, M22=0.9659258262890683, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-15{
+-webkit-transform: rotate(-15deg);  
+-moz-transform: rotate(-15deg);  
+-ms-transform: rotate(-15deg);  
+-o-transform: rotate(-15deg);  
+transform: rotate(-15deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9659258262890683, M12=0.25881904510252074, M21=-0.25881904510252074, M22=0.9659258262890683, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate20{
+-webkit-transform: rotate(20deg);  
+-moz-transform: rotate(20deg);  
+-ms-transform: rotate(20deg);  
+-o-transform: rotate(20deg);  
+transform: rotate(20deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9396926207859084, M12=-0.3420201433256687, M21=0.3420201433256687, M22=0.9396926207859084, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-20{
+-webkit-transform: rotate(-20deg);  
+-moz-transform: rotate(-20deg);  
+-ms-transform: rotate(-20deg);  
+-o-transform: rotate(-20deg);  
+transform: rotate(-20deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9396926207859084, M12=0.3420201433256687, M21=-0.3420201433256687, M22=0.9396926207859084, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate25{
+-webkit-transform: rotate(25deg);  
+-moz-transform: rotate(25deg);  
+-ms-transform: rotate(25deg);  
+-o-transform: rotate(25deg);  
+transform: rotate(25deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9063077870366499, M12=-0.42261826174069944, M21=0.42261826174069944, M22=0.9063077870366499, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-25{
+-webkit-transform: rotate(-25deg);  
+-moz-transform: rotate(-25deg);  
+-ms-transform: rotate(-25deg);  
+-o-transform: rotate(-25deg);  
+transform: rotate(-25deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9063077870366499, M12=0.42261826174069944, M21=-0.42261826174069944, M22=0.9063077870366499, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate30{
+-webkit-transform: rotate(30deg);  
+-moz-transform: rotate(30deg);  
+-ms-transform: rotate(30deg);  
+-o-transform: rotate(30deg);  
+transform: rotate(30deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.8660254037844387, M12=-0.49999999999999994, M21=0.49999999999999994, M22=0.8660254037844387, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate-30{
+-webkit-transform: rotate(-30deg);  
+-moz-transform: rotate(-30deg);  
+-ms-transform: rotate(-30deg);  
+-o-transform: rotate(-30deg);  
+transform: rotate(-30deg);
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.8660254037844387, M12=0.49999999999999994, M21=-0.49999999999999994, M22=0.8660254037844387, sizingMethod='auto expand');
+zoom: 1;
+}
+.rotate, ul#content_decorations li, ul#content_decorations li span{
+background: transparent;
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);    /* IE 6 & 7 */      
+zoom: 1;
+}
+
+
+/* IE6 USER MESSAGE */
+div#message{
+margin:100px auto 0 auto;
+width:660px;
+text-align:center;
+}
+div#message h3{
+font-family:Helvetica, "Helvetica Neue", Arial, sans-serif;
+margin:0 0 20px 0;
+font-size:28px;
+color:#fff; 
+}
+
+/* FIX IE7 "hasLayout" BUG */
+html.ie7 div, html.ie7 span, html.ie7 ul, html.ie7 li, html.ie7 p, html.ie7 span.title{
+min-height:0;
+zoom: 1;
+}
+html.ie7 div#view_content{ z-index:10; }
+html.ie7 div#gifts{ z-index:15;	}
+html.ie7 div#main_footer{ z-index:2; }
+html.ie7 div#main_overlay, html.ie8 div#main_overlay{
+background:transparent url(../../../wp-content/themes/stewardship/images/overlay_bg.png);
+} 

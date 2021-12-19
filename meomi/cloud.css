@@ -1,0 +1,293 @@
+<STYLE TYPE="text/css">
+body {	
+		text-align:center;
+		margin: 0; padding: 0;
+		margin-left:0px;
+		margin-top:0px;
+		}
+
+#monster {background:url('im/skytile.gif') repeat;}
+#flash {}
+#flashsizer {height: 325px;text-align:center;}
+
+#monster2 {background:url('im/skytile.gif') repeat;text-align:center;}
+#bod {}
+#bodsizer {		width:1062px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:0px;
+		padding:0px;
+		text-align:center;
+		}
+
+#monster3 {background:url('im/cloudtile.gif') repeat-x top center;}
+#bot {}
+#botsizer {text-align:center;}
+
+.head {
+       font-family: verdana, helvetica, arial ; 
+        font-size: 18px;
+        font-style: normal ;
+        line-height: 18px; 
+		color: #333333 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 15px ;
+        margin-bottom: 0px ; 
+		font-weight: bold ;
+		}		
+.emph {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 14px;
+        font-style: normal ;
+        line-height: 20px; 
+		color: #c56603 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 15px ;
+        margin-bottom: 15px ; 
+		font-weight: normal ;
+		}		
+.emph A:link {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 14px;
+        font-style: normal ;
+        line-height: 20px; 
+		text-decoration:underline;
+		color: #c56603 ; 
+		font-weight: normal ;
+		}	
+.emph A:hover {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 14px;
+        font-style: normal ;
+        line-height: 20px; 
+		text-decoration:none;
+		color: #c56603 ; 
+		font-weight: normal ;
+		}	
+.emph A:visited {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 14px;
+        font-style: normal ;
+        line-height: 20px; 
+		text-decoration:underline;
+		color: #c56603 ; 
+		font-weight: normal ;
+		}			
+.emph2 {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 14px;
+        font-style: normal ;
+        line-height: 20px; 
+		color: #c56603 ;
+		margin-left: 10px ;
+		margin-right: 0px ;
+        margin-top: 5px ;
+        margin-bottom: 5px ; 
+		font-weight: normal ;
+		}
+.copymd {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 12px;
+        font-style: normal ;
+        line-height: 16px; 
+		color: #cabe85 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 10px ;
+        margin-bottom: 10px ; 
+		font-weight: normal ;
+		}
+.copymdq {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 12px;
+        font-style: normal ;
+        line-height: 16px; 
+		color: #c56603 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 10px ;
+        margin-bottom: 10px ; 
+		font-weight: normal ;
+		}
+.copymd A:link {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 16px;  
+		color: #cabe85 ;
+		font-weight: normal ;
+		}	
+.copymd A:hover {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:none;
+        line-height: 16px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}	
+.copymd A:visited {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 16px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}
+.copymdnom {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 12px;
+        font-style: normal ;
+        line-height: 16px; 
+		color: #cabe85 ;
+		margin-left: 0px ;
+		margin-right: 0px ;
+        margin-top: 0px ;
+        margin-bottom: 0px ; 
+		font-weight: normal ;
+		}
+.copymdnom A:link {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 16px;  
+		color: #cabe85 ;
+		font-weight: normal ;
+		}	
+.copymdnom A:hover {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:none;
+        line-height: 16px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}	
+.copymdnom A:visited {
+        font-family: verdana, helvetica, arial ;
+        font-size: 12px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 16px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}
+.copy {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 11px;
+        font-style: normal ;
+        line-height: 15px; 
+		color: #cabe85 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 10px ;
+        margin-bottom: 10px ; 
+		font-weight: normal ;
+		}
+.store {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 11px;
+        font-style: normal ;
+        line-height: 15px; 
+		color: #cabe85 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 0px ;
+        margin-bottom: 0px ; 
+		font-weight: normal ;
+		}
+.store A:link {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 11px;
+        font-style: normal ;
+	text-decoration:underline;
+        line-height: 15px; 
+		color: #cabe85 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 0px ;
+        margin-bottom: 0px ; 
+		font-weight: normal ;
+		}
+.store A:hover {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 11px;
+        font-style: normal ;
+        line-height: 15px; 
+		text-decoration:none;
+		color: #c56603 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 0px ;
+        margin-bottom: 0px ; 
+		font-weight: normal ;
+		}
+.store A:visited {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 11px;
+        font-style: normal ;
+        line-height: 15px; 
+	text-decoration:underline;
+	color: #c56603 ;
+	margin-left: 10px ;
+	margin-right: 10px ;
+      margin-top: 0px ;
+      margin-bottom: 0px ; 
+	font-weight: normal ;
+		}
+.storebut {
+display:inline; margin-top:0px; margin-bottom:0px; 
+		}
+.copy A:link {
+        font-family: verdana, helvetica, arial ;
+        font-size: 11px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 15px;  
+		color: #cabe85 ;
+		font-weight: normal ;
+		}	
+.copy A:hover {
+        font-family: verdana, helvetica, arial ;
+        font-size: 11px;
+        font-style: normal ;
+		text-decoration:none;
+        line-height: 15px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}	
+.copy A:visited {
+        font-family: verdana, helvetica, arial ;
+        font-size: 11px;
+        font-style: normal ;
+		text-decoration:underline;
+        line-height: 15px; 
+		color: #c56603 ; 
+		font-weight: normal ;
+		}
+.ssscopy {
+        font-family: verdana, helvetica, arial ; 
+        font-size: 9px;
+        font-style: normal ;
+        line-height: 11px; 
+		color: #cabe85 ;
+		margin-left: 10px ;
+		margin-right: 10px ;
+        margin-top: 10px ;
+        margin-bottom: 10px ; 
+		font-weight: normal ;
+		}
+		
+				
+								
+.stuff {text-align:center;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:0px;
+		padding:0px;}	
+</STYLE>

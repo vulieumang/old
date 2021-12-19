@@ -1,0 +1,315 @@
+/* BEGIN: Body */
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: #e0f78f url('../images/bg.png') no-repeat top center;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+/* END: Body */
+
+/* BEGIN: center */
+.center {
+    position: relative;
+    width: 905px;
+    margin: 0 auto;
+    
+}
+/* END: center */
+
+
+/* BEGIN: Page - header */
+header {
+    position: relative;
+    height: 575px;
+}
+
+    header .center {
+        padding-top: 95px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        font-weight: bold;
+        color: #53a523;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    header #social {
+        background: url('../images/bg-social.png') bottom left no-repeat;
+        width: 115px;
+        height: 120px;
+        position: absolute;
+        top: 215px;
+        right: 0px;
+    }
+    
+        header #social ul {
+            list-style: none;
+        }
+        
+            header #social ul li {
+                float: left;
+                width: 34px;
+                height: 34px;
+                margin-right: 4px;
+            }
+            
+            header #social ul li a {
+                background: url('../images/btn-social-icons.png') no-repeat;
+                width: 34px;
+                height: 34px;
+                display: block;
+            }
+            
+                header #social ul li a#fb {
+                    background-position: 0px 0px;
+                }
+                
+                    header #social ul li a#fb:hover {
+                        background-position: 0px -34px;
+                    }
+                    
+                header #social ul li a#google {
+                    background-position: -37px 0px;
+                }
+                
+                    header #social ul li a#google:hover {
+                        background-position: -37px -34px;
+                    }
+                    
+                header #social ul li a#twitter {
+                    background-position: -76px 0px;
+                }
+                
+                    header #social ul li a#twitter:hover {
+                        background-position: -76px -34px;
+                    }
+    
+    header #counter {
+        
+    }
+    
+        header #labels  {
+            color: #b7cee1;
+            font-size: 18px;
+            padding-left: 212px;
+        }
+        
+            header #labels  span {
+                width: 119px;
+                display: block;
+                text-align: center;
+                float: left;
+            }
+
+    header #clouds {
+        background-image: url('../images/bg-clouds.png');
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 260px;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+    }
+
+/* END: Page - header */
+
+/* BEGIN: Page - content */
+#content {
+    background: url('../images/bg-content.png') no-repeat;
+    position: relative;
+    width: 100%;
+    height: 430px;
+    margin-top: -230px;
+    z-index: 100;
+}        
+    #content #house {
+        background-image: url('../images/bg-home.png');
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 416px;
+        position: absolute;
+        left: -100px;
+        top: -200px;
+        z-index: 10;
+    }
+    
+    #content #car {
+        background-image: url('../images/bg-car.png');
+        background-repeat: no-repeat;
+        width: 313px;
+        height: 147px;
+        position: absolute;
+        left: 700px;
+        top: 60px;
+        z-index: 11;
+    }
+	#content #logo {
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        width: 470px;
+        height: 147px;
+        position: absolute;
+        left: 320px;
+        top: -195px;
+        z-index: 11;
+    }
+	#content #home {
+        background-image: url('../images/Jatbi-home.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 390px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #home:hover {
+        background-image: url('../images/Jatbi-home-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 390px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #music {
+        background-image: url('../images/Jatbi-music.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 520px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #music:hover {
+        background-image: url('../images/Jatbi-music-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 520px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #photo {
+        background-image: url('../images/Jatbi-photo.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 650px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #photo:hover {
+        background-image: url('../images/Jatbi-photo-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 650px;
+        top: -50px;
+        z-index: 11;
+    }
+	#content #collect {
+        background-image: url('../images/Jatbi-collect.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 390px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #collect:hover {
+        background-image: url('../images/Jatbi-collect-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 390px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #about {
+        background-image: url('../images/Jatbi-about.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 520px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #about:hover {
+        background-image: url('../images/Jatbi-about-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 520px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #guestbook {
+        background-image: url('../images/Jatbi-guestbook.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 650px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #guestbook:hover {
+        background-image: url('../images/Jatbi-guestbook-a.png');
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        left: 650px;
+        top: 50px;
+        z-index: 11;
+    }
+	#content #footer {
+        background-repeat: no-repeat;
+        width: auto;
+        height: 147px;
+        position: absolute;
+        left:250px;
+        top: 320px;
+        z-index: 11;
+		font-size:11px;
+		color:#764d05;
+		font-weight:bold;
+    }
+/* END: Page - content */
+
+
+/*
+     FILE ARCHIVED ON 14:16:24 Jan 25, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:54:10 Dec 19, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 108.622
+  exclusion.robots: 0.087
+  exclusion.robots.policy: 0.08
+  RedisCDXSource: 0.754
+  esindex: 0.007
+  LoadShardBlock: 87.648 (3)
+  PetaboxLoader3.datanode: 168.644 (4)
+  CDXLines.iter: 17.936 (3)
+  load_resource: 152.523
+  PetaboxLoader3.resolve: 44.602
+*/
