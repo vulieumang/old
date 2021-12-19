@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'v';
+    src: url('./fonts/fontv.eot');
+    src: url('./fonts/fontv.woff') format('woff'),
+         url('./fonts/fontv.ttf') format('truetype'),
+         url('./fonts/fontv.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+body{
+	position: relative;
+	background: url('images/bg.jpg') no-repeat;
+	/*height: 1000px;*/
+	color: #fff;
+	font-family: 'v', arial;
+	cursor: url('images/chalk.png'), auto;
+	
+}
+span#week{
+	position: absolute;
+	top: 0;
+	left: 575px;
+}
+#pre{
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	background: url('images/pre.png') no-repeat;
+	width: 90px;
+	height: 88px;
+	display: block;
+	padding: 10px  0 0 20px;
+	color: #fff;
+	text-decoration: none;
+
+}
+#next{
+	position: absolute;
+	top: 50px;
+	left: 1210px;
+	background: url('images/next.png') no-repeat;
+	width: 120px;
+	height: 102px;
+	display: block;
+	padding: 10px  0 0 6px;
+	color: #fff;
+	text-decoration: none;
+}
+.b{
+	color: yellow;
+}
+
+div.fl{
+	padding-left: 100px;
+	
+}
+
+div.font-right2
+{
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 50px ;
+	padding-left: 350px;
+	margin-right: 400px;
+}
+.title_bg{
+	
+}
+table {
+
+	font-size: 18.5px;
+	/*width: 150px;*/
+	padding: 0 10px;
+}
+table  td[align] table{
+	width: 1050px;
+}
+table  td[align] table td{
+	border: none;
+}
+table table  td{
+	border: solid 2px #fff;
+}
+
+table table  td{
+	border: solid 2px #fff;
+}
+
+table table  table td {
+	border: none;
+}
+table table table td[height]{
+	background: #fff;
+}
+table, table tr, td{
+	background: none;
+}
+
+
