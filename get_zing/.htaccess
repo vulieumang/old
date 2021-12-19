@@ -1,0 +1,12 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteRule ^(.*).html$ link.php?link=http://mp3.zing.vn/bai-hat/$1.html [L]
+
+
+
+
+
+
+
+
